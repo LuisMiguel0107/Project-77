@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YumeZone.gv</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3589fb58b2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="icon" href="imagenes/logo.jpg" </head>
+
+<body>
+
+  <!-- Menú de Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">YumeZone.gv</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="animes.html"><i class="fa-solid fa-play"></i> Animes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nosotros.html"><i class="fa-solid fa-users"></i> Nosotros</a>
+        <li class="nav-item">
+          <a class="nav-link" href="juegos.html"><i class="fas fa-gamepad"></i> Juegos</a>
+        </li>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sección de Hero -->
+  <div class="hero-section">
+    <h1>Bienvenido a YumeZone.gv</h1>
+    <p>Descubre tus animes favoritos y más.</p>
+    <a href="animes.html" class="btn">Explorar Animes</a>
+  </div>
+
+  <!-- Tarjetas de Anime -->
+  <div class="container">
+    <div class="search-container">
+      <input type="text" id="animeSearch" class="form-control" placeholder="Buscar anime...">
+      <button class="btn" onclick="searchAnime()">Buscar</button>
+      <p id="searchMessage" class="text-center mt-3"></p>
+    </div>
+
+    <div class="row" id="animeList">
+      <!-- Anime 1 -->
+      <div class="col-6 col-md-3">
+        <div class="card">
+          <img src="imagenes/solo-leveling.jpg" alt="Anime 1">
+          <div class="card-body">
+            <h5 class="card-title">Solo Leveling</h5>
+            <p class="card-text">Género: Acción</p>
+          </div>
+          <div class="card-footer">
+            <a href="animes/detalle-animes/solo-leveling.html" class="btn">Ver Anime</a>
+          </div>
+        </div>
+      </div>
+      <!-- Anime 2 -->
+      <div class="col-6 col-md-3">
+        <div class="card">
+          <img src="imagenes/one-piece.jpg" alt="Anime 2">
+          <div class="card-body">
+            <h5 class="card-title">One Piece </h5>
+            <p class="card-text">Género: Aventura, Acción</p>
+          </div>
+          <div class="card-footer">
+            <a href="detalle-anime1.html" class="btn">Ver Anime</a>
+          </div>
+        </div>
+      </div>
+      <!-- Anime 3 -->
+      <div class="col-6 col-md-3">
+        <div class="card">
+          <img src="imagenes/kaiju-no-8.jpg" alt="Anime 3">
+          <div class="card-body">
+            <h5 class="card-title">Kaiju No 8</h5>
+            <p class="card-text">Género: Acción, Comedia</p>
+          </div>
+          <div class="card-footer">
+            <a href="animes/detalle-animes/KaijuNo8.html" class="btn">Ver Anime</a>
+          </div>
+        </div>
+      </div>
+      <!-- Anime 4 -->
+      <div class="col-6 col-md-3">
+        <div class="card">
+          <img src="imagenes/the-god.jpg" alt="Anime 4">
+          <div class="card-body">
+            <h5 class="card-title">The God of High</h5>
+            <p class="card-text">Género: Acción, Comedia</p>
+          </div>
+          <div class="card-footer">
+            <a href="animes/solo-leveling.html" class="btn">Ver Anime</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anime 5 -->
+      <div class="col-6 col-md-3">
+        <div class="card">
+          <img src="imagenes/tower-of-god.jpg" alt="Anime 5">
+          <div class="card-body">
+            <h5 class="card-title">Tower of God</h5>
+            <p class="card-text">Género: Acción</p>
+          </div>
+          <div class="card-footer">
+            <a href="animes/solo-leveling.html" class="btn">Ver Anime</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!-- Anime 4 -->
+      <div class="col-6 col-md-3">
+        <div class="card">
+          <img src="imagenes/voz-silenciosa.jpg" alt="Anime 4">
+          <div class="card-body">
+            <h5 class="card-title">Voz Silenciosa</h5>
+            <p class="card-text">Género: Romance</p>
+          </div>
+          <div class="card-footer">
+            <a href="detalle-anime1.html" class="btn">Ver Anime</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pie de Página -->
+  <footer class="footer">
+    <div class="logo">YumeZone.gv</div>
+    <p class="copy-right">© <span class="year">2024</span></p>
+  </footer>
+
+  <script src="scripts/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
